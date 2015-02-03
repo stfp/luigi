@@ -121,12 +121,11 @@ not the same instance:
     >>> hash(c) == hash(d)
     True
 
-Python is not a typed language and you don't have to specify the types
-of any of your parameters. You can simply use *luigi.Parameter* if you
-don't care. In fact, the reason DateParameter et al exist is just in
-order to support command line interaction and make sure to convert the
-input to the corresponding type (i.e. datetime.date instead of a
-string).
+You don't have to specify the types of any of your parameters: you can simply
+use *luigi.Parameter* if you don't care. In fact, the reason DateParameter
+et al exist is just in order to support command line interaction and make sure
+to convert the input to the corresponding type (i.e. datetime.date instead
+of a string).
 
 Setting parameter value for other classes
 -----------------------------------------
